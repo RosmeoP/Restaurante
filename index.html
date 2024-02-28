@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Clase 12</title>
+	</head>
+	<body>
+		<img
+			src="https://marketplace.canva.com/EAFpeiTrl4c/1/0/1600w/canva-abstract-chef-cooking-restaurant-free-logo-9Gfim1S8fHg.jpg"
+			width="150"
+			height="150"
+		/>
+		<h1>Master Chefy</h1>
+		<p>Best place to spend time with your family</p>
+		<h2>Menu de comida</h2>
+		<label for="apellido">Last name</label>
+		<br />
+		<input type="text" id="apellido" />
+		<br />
+		<label for="productName"
+			>Name of the food ("Tacos de birria", "Hamburguesa con papas",
+			"Nachos")</label
+		>
+		<br />
+		<input type="text" id="productName" />
+		<br />
+		<label for="quantity">Cantidad</label>
+		<br />
+		<input id="quantity" type="number" value="0" />
+
+		<h2>Drinks</h2>
+		<label for="drinkName"
+			>Name of the drink("Coca-cola", "Pepsi", "Fanta", "7up")</label
+		>
+		<br />
+		<input id="drinkName" type="text" />
+		<br />
+		<label for="drinkQuantity">Cantidad</label>
+		<br />
+		<input type="number" value="0" id="drinkQuantity" />
+		<br />
+		<button onclick="calcularTotal()">Calcular Total</button>
+		<br />
+		<br />
+		<label>Total: $<span id="productTotal"></span></label>
+		<br />
+		<button onclick="realizarPedido()">Realizar Pedido</button>
+
+		<h2>Estado de orden</h2>
+		<label id="apellidoOrden">Orden para: </label>
+		<table border="1" style="padding: 2px">
+			<thead>
+				<tr>
+					<td>Producto</td>
+					<td>Cantidad</td>
+					<td>Estado</td>
+				</tr>
+			</thead>
+			<tbody id="orderStatus"></tbody>
+		</table>
+		<script src="./script.js"></script>
+	</body>
+</html>
